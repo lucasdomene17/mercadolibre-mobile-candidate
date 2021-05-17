@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Test Mercadolibre</string>
+    <string name="searching">Buscando...</string>
+    <string name="problem_retry">Ocurrió un problema, desea intentar nuevamente?</string>
+    <string name="not_nerwok_error">Por favor verifique su conexión a internet</string>
+    <string name="getting_details">Obteniendo Detalles...</string>
+    <string name="not_details_found">El vendedor no incluyó una descripción del producto</string>
+    <string name="not_search_found">No se encontró ningún resultado para la busqueda de %1$s</string>
+
+    <string name="new_text">Nuevo</string>
+    <string name="used_text">Usado</string>
+    <string name="sold">Vendidos</string>
+    <string name="available">Disponibles</string>
+    <string name="buy">Comprar</string>
+    <string name="search">Buscar</string>
+</resources>

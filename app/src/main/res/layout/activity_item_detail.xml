@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ItemDetailActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewPictures"
+                    android:scrollbars="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="15"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewPictures"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewPictures">
+
+                <TextView
+                    android:id="@+id/textViewConditionItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:textStyle="normal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewPictures"/>
+
+                <TextView
+                    android:id="@+id/textViewTitleItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_margin="10sp">
+
+                   <TextView
+                       android:id="@+id/textViewCurrencyPriceItem"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="5sp"
+                       android:textStyle="normal"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+                   <TextView
+                       android:id="@+id/textViewPriceItem"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textStyle="normal"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+               </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewBuyLinkItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:textStyle="normal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+                <TextView
+                    android:id="@+id/textViewDescriptionItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:textStyle="normal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
